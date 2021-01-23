@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300;400&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 245, 245);
+    font-family: "Roboto", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form {
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px;
+    background-color: #fbfbfb;
+    box-shadow: 0px 0 70px rgb(236, 236, 236);
 }
 
-.App-link {
-  color: #61dafb;
+.input-form input {
+    width: 100%;
+    margin: 10px 0 10px;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-form h2 {
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.btn {
+    float: right;
+    padding: 10px 20px;
+    background: #01142f;
+    font-size: 19px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.modal {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background: #242240;
+}
+
+.modal h2 {
+    color: #fff;
+    font-size: 14px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: 0 0 20px 0;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.item h2 {
+    font-size: 26px;
+}
+
+.btn-remove {
+    font-size: 16px;
+    color: #0260e8;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
